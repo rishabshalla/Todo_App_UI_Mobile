@@ -89,6 +89,7 @@ body {
   height: 330px;
   width: 220px;
   border-radius: 10px;
+  /* display: inline-block; */
   box-shadow: 10px 10px 10px #d6d0d0;
 }
 .card1 {
@@ -257,9 +258,120 @@ body {
   top: 270px;
   left: 480px;
 }
-@media screen and (min-width: 480px) and (max-width: 900px) {
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .ui {
+    margin: 0px;
+    width: auto;
+    /* border: 1px solid black; */
+  }
+  .head-container {
+    border: 1px solid black;
+    width: auto;
+    padding-right: 10px;
+    padding-bottom: 100px;
+  }
+  .left-title {
+    /* border: 1px solid black; */
+
+    margin-left: 10px;
+    /* display: block; */
+  }
+  .right-title {
+    /* border: 1px solid black; */
+    width: auto;
+    padding-right: 10px;
+    height: 40px;
+    margin-right: 0px;
+  }
+  .add-logo {
+    left: 100px;
+  }
+  .task-body {
+    visibility: hidden;
+  }
+  form {
+    visibility: hidden;
+  }
+  .line {
+    visibility: hidden;
+  }
   .cards-container {
-    display: inline-block;
+    position: relative;
+    left: 0px;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+  }
+  .cards {
+    text-align: left;
+    height: 40px;
+    width: auto;
+    border-color: gainsboro;
+    margin: 20px 0px;
+    padding: 20px;
+  }
+  .task-title {
+    margin: 0px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .line-trip {
+    visibility: initial;
+    width: 240px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .task-body-trip {
+    visibility: initial;
+  }
+  .check-trip {
+    visibility: initial;
+  }
+  .container-card-trip {
+    margin: 0px;
+    position: relative;
+    top: 100px;
+    transform: scale(1.4, 1.4);
+  }
+  .card-trip {
+    margin: 0px;
+    border: 1px solid #f52e27;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #d6d0d0;
+  }
+  .task-title-trip {
+    position: initial;
+    padding-top: 30px;
+    padding-right: 40px;
+    text-align: center;
+    color: #f52e27;
+  }
+  .task-body-trip {
+    position: initial;
+  }
+  .add-logo-trip {
+    position: relative;
+    left: 100px;
+  }
+  .form-new-list {
+    visibility: initial;
+  }
+  .ui-new-list {
+    margin: 0px;
+  }
+  .new-list {
+    transform: scale(1.4, 1.4);
+    position: absolute;
+    top: 350px;
+    left: 220px;
+    width: 300px;
+  }
+  .form-new-trip {
+    visibility: initial;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 480px) {
